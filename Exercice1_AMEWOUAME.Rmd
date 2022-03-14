@@ -1,0 +1,134 @@
+---
+title: "Exercice1_AMEWOUAME"
+author: "AMEWOUAME Elisée"
+date: '2022-03-14'
+output: pdf_document
+
+
+team_A <- 3 # Number of goals scored by Team A
+team_B <- 1 # Number of goals scored by Team B
+if (team_A > team_B){
+  print ("Team A wins")
+}
+
+
+team_A <- 1 # Number of goals scored by Team A
+team_B <- 3 # Number of goals scored by Team B
+if (team_A > team_B){
+    print ("Team A will make the playoffs")
+}
+
+team_A <- 1 # Number of goals scored by Team A
+team_B <- 3# Number of goals scored by Team B
+if (team_A > team_B){
+    print ("Team A will make the playoffs")
+} else {
+    print ("Team B will make the playoffs")
+}
+
+
+team_A <- 2 # Number of goals scored by Team A
+team_B <- 2# Number of goals scored by Team B
+if (team_A > team_B){
+  print ("Team A won")
+} else if (team_A < team_B){
+  print ("Team B won")
+} else {
+  "Team A & B tied"
+}
+
+
+
+if (matches[[1]][1] > matches[[1]][2]){
+    print ("Win")
+} else {
+    print ("Loss")
+}
+
+if (matches[[2]][1] > matches[[2]][2]){
+   print ("Win")
+} else {
+    print ("Loss")
+}
+
+if (matches[[3]][1] > matches[[3]][2]){
+   print ("Win")
+} else {
+   print ("Loss")
+}
+
+
+
+teams <- c("team_A","team_B")
+for (value in teams){
+    print(value)
+}
+
+matches <- list(c(2,1),c(5,2),c(6,3))
+for (match in matches){
+    sum(match)
+}
+
+
+
+matches <- list(c(2,1),c(5,2),c(6,3))
+total_goals <- c()
+for (match in matches){
+    total_goals <- c(total_goals, sum(match))
+}
+
+
+
+matches <- list(c(2,1),c(5,2),c(6,3))
+for (match in matches){
+    if (match[1] > match[2]){
+        print("Win")
+    } else {
+        print ("Lose")
+    }
+}
+
+
+matches <- list(c(2,1),c(5,2),c(6,3))
+for (match in matches){
+    if (match[1] > match[2]){
+        print("Win")
+        break
+    } else {
+        print("Lose")
+    }
+}
+
+
+wins <- 0
+while (wins < 10){
+    print ("Does not make playoffs")
+    wins <- wins + 1
+}
+
+
+wins <- 0
+while (wins <= 10){
+    if (wins < 10){
+        print("does not make playoffs")
+    } else {
+        print ("makes playoffs")
+    }
+    wins <- wins + 1
+}
+
+
+
+wins <- 0
+playoffs <- c()
+while (wins <= 15){
+    if (wins < 10){
+        print("does not make playoffs")
+        playoffs <- c(playoffs, "does not make playoffs")
+    } else {
+        print ("makes playoffs")
+        playoffs <- c(playoffs, "makes playoffs")
+        break
+    }
+    wins <- wins + 1
+}
